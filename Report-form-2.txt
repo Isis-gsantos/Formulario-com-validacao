@@ -1,0 +1,22 @@
+-- Bug report --
+
+There telefone field accepts non-numerical characters and all fields accepts blank spaces
+
+Repro Rate: 
+- 10/10 (100%)
+
+Steps to reproduce:
+- Open the application via index.html
+- Fill the mandatory fields with an empty string (' ')
+- Also, fill the telefone field with non-numerical characters
+- Click on the 'Enviar' button
+- Observe the application's behavior
+
+Actual Result: 
+- The fields become green, indicating that the values are valid
+
+Expected Result:
+- The fields should not become green, besides having a feedback indicating that the form needs to be filled correctly
+
+Build Version:
+- V1 1.0.1
