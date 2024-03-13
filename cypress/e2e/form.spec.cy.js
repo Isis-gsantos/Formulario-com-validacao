@@ -14,6 +14,11 @@ describe('Form Testing', () => {
   it('Checks the page title', ()=> {
     cy.title().should('be.equal', 'Formulário com Validação')
   })
+
+  it.only('Checks the page message', ()=> {
+    cy.get('h1').should('contain', 'Ficou com dúvida?')
+    cy.get('p').should('contain', 'caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.')
+  })
   
   it('Fill the form correctly and sends it', () => {
     cy.get('#nome-completo').type('Lucas Marco').should('have.value', 'Lucas Marco')
@@ -56,7 +61,7 @@ describe('Form Testing', () => {
     cy.get('#mensagem').should('have.css', 'border-color', red)
   })
 
-  it.only('Testing the capacity of the message form', ()=> {
+  it('Testing the capacity of the message form', ()=> {
     cy.get('#mensagem').type(breakingText, {delay : 0}).should('have.value', breakingText)
   })
 })
