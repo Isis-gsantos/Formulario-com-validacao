@@ -15,7 +15,7 @@ describe('Form Testing', () => {
     cy.title().should('be.equal', 'Formulário com Validação')
   })
 
-  it.only('Checks the page message', ()=> {
+  it('Checks the page message', ()=> {
     cy.get('h1').should('contain', 'Ficou com dúvida?')
     cy.get('p').should('contain', 'caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.')
   })
