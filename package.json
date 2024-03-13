@@ -1,0 +1,15 @@
+{
+  "name": "quest-validacao-de-formulario",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">QUEST Validação de Formulário :rocket:</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.6"
+  }
+}
