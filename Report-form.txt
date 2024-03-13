@@ -1,0 +1,21 @@
+-- Bug report --
+
+There is no visual feedback that the form was sent
+
+Repro Rate: 
+- 10/10 (100%)
+
+Steps to reproduce:
+- Open the application via index.html
+- Fill the mandatory fields with valid text
+- Click on the 'Enviar' button
+- Observe the application's behavior
+
+Actual Result: 
+- There is no visual feedback
+
+Expected Result:
+- More feedback to the user, such as a "form sent" screen or an explicit message 
+
+Build Version:
+- V1 1.0.1
